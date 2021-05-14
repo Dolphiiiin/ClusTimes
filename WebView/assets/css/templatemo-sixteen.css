@@ -95,6 +95,10 @@ a.filled-button:hover {
 .about-heading {
 	background-image: url(../images/about-heading.jpg);
 }
+.null-heading {
+	background-color: #9fcdff;
+}
+
 
 .contact-heading {
 	background-image: url(../images/contact-heading.jpg);
