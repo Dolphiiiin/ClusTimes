@@ -100,9 +100,9 @@
 
 <style>
     .side {
-        background-color: #ff838b;
+        display: inline;
+        background-color: #e2e3e5;
         width: 300px !important;
-        text-align: center;
     }
 
     .content-side {
@@ -187,9 +187,35 @@
 
     </div>
 
-    <div class="side" id="ad">
-        <p>サイドバー</p>
+    <div class="side" >
+        <img src="assets/img/1.png" id="ad" width="100%">
     </div>
+    <script>
+        let imglist = [
+            "assets/img/1.png",
+            "assets/img/2.png",
+            "assets/img/3.png",
+            "assets/img/4.png",
+            "assets/img/5.png",
+            "assets/img/6.jpg",
+            "assets/img/7.png",
+            "assets/img/8.png",
+            "assets/img/9.png",
+            "assets/img/10.png",
+            "assets/img/11.png",
+            "assets/img/12.jpg",
+            "assets/img/13.jpg",
+            "assets/img/14.jpg"
+        ];
+
+
+        let selectnum = Math.floor(Math.random() * imglist.length);
+        console.log(imglist[selectnum])
+        document.getElementById("ad").src =imglist[selectnum];
+        selectnum = Math.floor(Math.random() * imglist.length);
+        console.log(imglist[selectnum])
+        document.getElementById("ad2").src =imglist[selectnum];
+    </script>
 
 </article>
 
@@ -217,33 +243,6 @@
             t.style.color = '#fff';
         }
     }
-</script>
-<script>
-    let imglist = [
-        "1.png",
-        "2.png",
-        "3.png",
-        "4.png",
-        "5.png",
-        "6.jpg",
-        "7.png",
-        "8.png",
-        "9.png",
-        "10.png",
-        "11.png",
-        "12.jpg",
-        "13.jpg",
-        "14.jpg"
-    ];
-
-
-    let selectnum = Math.floor(Math.random() * imglist.length);
-    console.log(imglist[selectnum])
-    let img_element = document.createElement("img");
-    img_element.src = "assets/ad/" + imglist[selectnum];
-    let element = document.getElementById("ad");
-    console.log(img_element)
-    element.appendChild(img_element);
 </script>
 
 </body>
