@@ -4,11 +4,18 @@
   <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K9RXC7FB1V"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-K9RXC7FB1V');
+    </script>
+    <meta name="google-site-verification" content="GPFnN0x0_PBW0vW7Eo0IMQESH27Eh4nlbfqOxyMhG0g" />
     <title>ClusTimes</title>
 
     <!-- Bootstrap core CSS -->
@@ -26,6 +33,17 @@ https://templatemo.com/tm-546-sixteen-clothing
     <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
     <link rel="stylesheet" href="assets/css/owl.css">
 
+
+    <meta property="og:type" content="blog">
+    <meta property="og:description" content="ClusTimesはClusterに関する情報を発信する新聞です。clusterで行われたイベント、ワールドの情報など多種多様な情報を掲載しています">
+    <meta property="og:title" content="ClusTimes - トップページ">
+    <meta property="og:url" content="https://clustimes.vercel.app/">
+    <meta property="og:image" content="https://clustimes.vercel.app/assets/images/background1.png">
+    <meta property="og:site_name" content="ClusTimes">
+    <meta property="og:locale" content="ja_JP" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@ClusTimes">
   </head>
 
   <body>
@@ -58,6 +76,12 @@ https://templatemo.com/tm-546-sixteen-clothing
               <li class="nav-item">
                 <a class="nav-link" href="products.html">Back Numbers</a>
               </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="member.html">Mebmber</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="world.html">Worlds</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About Us</a>
               </li>
@@ -73,14 +97,18 @@ https://templatemo.com/tm-546-sixteen-clothing
       <div class="owl-banner owl-carousel">
         <div class="banner-item-01">
           <div class="text-content">
-            <h4>BackNumber</h4>
-            <h2 style="color: black">ClusTimesを読もう</h2>
+            <a href="products.html" style="text-decoration: none">
+              <h4>BackNumber</h4>
+              <h2 style="color: black">ClusTimesを読もう</h2>
+            </a>
           </div>
         </div>
         <div class="banner-item-02">
           <div class="text-content">
+            <a href="about.html#member" style="text-decoration: none">
             <h4>Discord Server</h4>
             <h2>新聞を書こう</h2>
+            </a>
           </div>
         </div>
       </div>
@@ -91,20 +119,21 @@ https://templatemo.com/tm-546-sixteen-clothing
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="section-heading">
-              <h2>最新の記事</h2>
-              <a href="products.html">全て見る <i class="fa fa-angle-right"></i></a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="product-item">
-              <a href="#"><img src="" alt=""></a>
-              <div class="down-content">
-                <a href="#"><h4>準備中</h4></a>
-                <p>まだ記事が投稿されていません</p>
+            <div class="filters-content">
+              <div class="row grid">
+                <div class="col-lg-4 col-md-4 all des">
+                  <div class="product-item">
+                    <a href="backNumber/no_0/preview.html"><img src="backNumber/no_0/page1.png" alt=""></a>
+                    <div class="down-content">
+                      <a href="backNumber/no_0/preview.html"><h4>第0号</h4></a>
+                      <p>cluster新聞部 発足/Bath in cluster, but in Mars way/カジノゲームで遊ぶ/売上 4000万狐突破/登山部のススメ/ユーザーイベント「大ｸｿ速祭」終了/clusterの温泉</p>
+
+                    </div>
+                  </div>
+                </div>
               </div>
+
             </div>
-          </div>
 
           </div>
         </div>
@@ -116,19 +145,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 
 
     
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="inner-content">
-              <p>Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
-            
-            - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+
 
 
     <!-- Bootstrap core JavaScript -->
