@@ -1,0 +1,19 @@
+#side-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side-left-column {
+    width: 80%;
+}
+
+.side-right-column {
+    padding-top: 50px;
+    width: 18%;
+}
+
+.side-right-column img {
+    padding-bottom: 25px;
+}
