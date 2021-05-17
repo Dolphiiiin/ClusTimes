@@ -1062,3 +1062,52 @@ footer .inner-content p a {
 		bottom: 0;
 	}
 }
+
+table {
+	width: 80%;
+	margin-bottom: 10px;
+
+}
+
+th {
+	width: 40%;
+}
+
+td {
+	width: 40%;
+}
+
+.tbl-r02 th {
+	background: #adb5bd;
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+}
+
+th a,
+td a {
+	text-decoration: none;
+	color: #000;
+}
+
+.tbl-r02 td {
+	background-color: #9fcdff;
+	padding: 10px;
+}
+
+@media screen and (max-width: 640px) {
+	.last td:last-child {
+		width: 100%;
+	}
+
+	.tbl-r02 {
+		width: 80%;
+	}
+
+	.tbl-r02 th,
+	.tbl-r02 td {
+		　　border-bottom: none;
+		display: block;
+		width: 100%;
+	}
+}
