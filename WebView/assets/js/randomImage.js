@@ -18,15 +18,13 @@ function imgRandom(path) {
 
     ];
 
-    console.log(imglist);
+    
     let selectnum = Math.floor(Math.random() * imglist.length);
     document.getElementById("sideBanner").src = imglist[selectnum];
     imglist.splice(selectnum, 1);
-    console.log(imglist);
     selectnum = Math.floor(Math.random() * imglist.length);
     document.getElementById("sideBanner2").src = imglist[selectnum];
     imglist.splice(selectnum, 1);
-    console.log(imglist);
     selectnum = Math.floor(Math.random() * imglist.length);
     document.getElementById("sideBanner3").src = imglist[selectnum];
 }
