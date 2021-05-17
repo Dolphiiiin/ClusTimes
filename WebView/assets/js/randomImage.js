@@ -18,7 +18,7 @@ function imgRandom(path) {
 
     ];
 
-    
+
     let selectnum = Math.floor(Math.random() * imglist.length);
     document.getElementById("sideBanner").src = imglist[selectnum];
     imglist.splice(selectnum, 1);
