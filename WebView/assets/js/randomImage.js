@@ -15,7 +15,8 @@ function imgRandom(path) {
         path + "13.jpg",
         path + "14.jpg",
         path + "15.png",
-        path + "16.png"
+        path + "16.png",
+        path + "17.png"
     ];
 
 
