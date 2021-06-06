@@ -4,7 +4,8 @@
 <head>
 
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
 
     <title>ClusTimes</title>
 
@@ -13,12 +14,16 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-K9RXC7FB1V"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-K9RXC7FB1V');
     </script>
-    <meta name="google-site-verification" content="GPFnN0x0_PBW0vW7Eo0IMQESH27Eh4nlbfqOxyMhG0g" />
+    <meta name="google-site-verification" content="GPFnN0x0_PBW0vW7Eo0IMQESH27Eh4nlbfqOxyMhG0g"/>
     <!-- Bootstrap core CSS -->
     <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!--
@@ -36,12 +41,13 @@
     <link rel="stylesheet" href="../../assets/css/sidebar.css">
 
     <meta property="og:type" content="blog">
-    <meta property="og:description" content="週末はイベントがいっぱい！/ソーシャルVR空間を用いた2人組みアーティスト『memex』の新プロジェクトが発表">
-    <meta property="og:title" content="ClusTimes - 号外【5/24】">
-    <meta property="og:url" content="https://clustimes.vercel.app/backNumber/extra_1/preview.html">
-    <meta property="og:image" content="https://clustimes.vercel.app/backNumber/extra_1/page1.png">
+    <meta property="og:description"
+          content="ソーシャルVR空間を用いた2人組アーティスト『memex』の新プロジェクトが発表/繰り返しの起点【memex ソロライブ Iteration Zeroレポート】/Bassic deals with  UniVRM/えんきす1周年のすべて！！/BJ大会ClusTimes杯開催、優勝はめどうさん">
+    <meta property="og:title" content="ClusTimes - 第1号">
+    <meta property="og:url" content="https://clustimes.vercel.app/backNumber/no_1/preview.html">
+    <meta property="og:image" content="https://clustimes.vercel.app/backNumber/no_1/page1.png">
     <meta property="og:site_name" content="ClusTimes">
-    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:locale" content="ja_JP"/>
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@ClusTimes">
@@ -63,8 +69,10 @@
 <header class="">
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="../../index.html"><img src="../../assets/images/logo.png" style="width: 250px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="../../index.html"><img src="../../assets/images/logo.png"
+                                                                 style="width: 250px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -99,7 +107,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="text-content">
-                    <h2>号外【5/24】</h2>
+                    <h2>第1号</h2>
                 </div>
             </div>
         </div>
@@ -108,23 +116,40 @@
 
 <div id="side-wrapper">
     <div class="side-left-column">
-<div class="best-features about-features">
-    <div class="container">
-        <img src="page1.png" style="width:80%; height:80%">
-        <img src="page2.png" style="width:80%; height:80%">
-        <img src="page3.png" style="width:80%; height:80%">
+        <!--        <div class="best-features about-features">-->
+        <!--            <button onclick="changeStyle()">テキストモードに切り替え</button>-->
+        <div class="container" id="image" style="display: block">
+            <video src="page1.mp4" width="95%" autoplay loop muted></video>
+            <video src="page2.mp4" width="95%" autoplay loop muted></video>
+            <video src="page3.mp4" width="95%" autoplay loop muted></video>
+            <video src="page4.mp4" width="95%" autoplay loop muted></video>
+        </div>
+
+        <div class="container" id="text" style="display: none">
+
+        </div>
+
+        <script>
+            let sheetStyle = "image";
+
+            function changeStyle() {
+                if (sheetStyle == "image") {
+                    document.getElementById("image").style = "display: none";
+                    document.getElementById("text").style = "display: block";
+                    sheetStyle = "text";
+                } else {
+                    document.getElementById("image").style = "display: block";
+                    document.getElementById("text").style = "display: none;";
+                    sheetStyle = "image";
+                }
+            }
+        </script>
     </div>
+
+
 </div>
 
-
-
-    </div>
-
 </div>
-
-
-
-
 
 
 <!-- Bootstrap core JavaScript -->
@@ -140,13 +165,13 @@
 <script src="../../assets/js/accordions.js"></script>
 
 
-<script language = "text/Javascript">
+<script language="text/Javascript">
     cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-    function clearField(t){                   //declaring the array outside of the
-        if(! cleared[t.id]){                      // function makes it static and global
+    function clearField(t) {                   //declaring the array outside of the
+        if (!cleared[t.id]) {                      // function makes it static and global
             cleared[t.id] = 1;  // you could use true and false, but that's more typing
-            t.value='';         // with more chance of typos
-            t.style.color='#fff';
+            t.value = '';         // with more chance of typos
+            t.style.color = '#fff';
         }
     }
 
