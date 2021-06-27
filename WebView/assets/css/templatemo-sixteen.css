@@ -428,6 +428,7 @@ header .navbar {
 .product-item .down-content {
 	padding: 30px;
 	position: relative;
+	height: 100%;
 }
 
 .product-item img {
