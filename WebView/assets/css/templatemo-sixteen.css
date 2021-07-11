@@ -428,6 +428,7 @@ header .navbar {
 .product-item .down-content {
 	padding: 30px;
 	position: relative;
+	height: 100%;
 }
 
 .product-item img {
@@ -1110,4 +1111,17 @@ td a {
 		display: block;
 		width: 100%;
 	}
+}
+
+a.btn--yellow {
+	color: #000;
+	background-color: #b9bbbe;
+	border-bottom: 5px solid #adb5bd;
+}
+
+a.btn--yellow:hover {
+	margin-top: 3px;
+	color: #000;
+	background: #b9bbbe;
+	border-bottom: 2px solid #adb5bd;
 }
